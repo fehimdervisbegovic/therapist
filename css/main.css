@@ -1,0 +1,1199 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Quincy Light';
+  src: url('./fonts/Quincy-Light.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quincy Regular';
+  src: url('./fonts/Quincy-Regular.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT-Regular';
+  src: url('./fonts/TT-Regular.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT-Medium';
+  src: url('./fonts/TT-Medium.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT-DemiBold';
+  src: url('./fonts/TT-DemiBold.woff') format('woff');
+  font-style: normal;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+  text-rendering: geometricPrecision;
+  background: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 24px 0;
+}
+
+.header--fixed {
+  position: fixed;
+  z-index: 100;
+  background: #ffffff;
+  transform: translateY(-100%);
+}
+
+.main {
+  position: relative;
+  padding-top: 80px;
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.container--booking-confirmation {
+  position: relative;
+}
+
+.layout {
+  display: flex;
+}
+
+.layout--header,
+.layout--results-nav,
+.layout--therapist-item-description,
+.layout--filter-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.layout--filter-header {
+  width: 100%;
+}
+
+.layout--therapist-item-description {
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.layout--hero {
+  flex-wrap: wrap;
+}
+
+.layout--filters {
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.layout--filter-action {
+  gap: 24px;
+}
+
+.layout--booking {
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.layout--price {
+  margin-top: 16px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.layout--therapist-blocks {
+  padding-top: 8px;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.layout--block {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-divider {
+  width: 8px;
+  height: 1px;
+  background: #A4A0AC;
+}
+
+.button {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 48px;
+  font-family: "TT-Medium", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  letter-spacing: .01em;
+  text-decoration: none;
+  padding: 0 40px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.button[disabled] {
+  cursor: auto;
+}
+
+.button[disabled] path {
+  fill: #C1B6D3 !important;
+}
+
+.button--up-sale-book {
+  margin-top: 24px;
+}
+
+.button--icon {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background: none;
+}
+
+.button--carousel-back {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.button__text,
+.inline-text {
+  display: inline-flex;
+  align-items: flex-end;
+  height: 18px;
+  line-height: 0.9375;
+}
+
+.inline-text {
+  font-family: "TT-Medium", "Helvetica", "Arial", sans-serif;
+}
+
+.button--purple {
+  color: #ffffff;
+  background: #8964C3;
+}
+
+.button--full-w {
+  width: 100%;
+}
+
+.button--outline {
+  border: 1px solid #E5E2EC;
+  color: #554C65;
+}
+
+.button--book {
+  width: 110px;
+  height: 110px;
+  border-radius: 110px;
+  background: #8964C3;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  position: fixed;
+  bottom: calc(2em + env(safe-area-inset-bottom));
+  right: 20px;
+}
+
+.button--payment {
+  margin-top: 48px;
+}
+
+.booking-therapist-information {
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.full-w {
+  position: relative;
+  width: 100vw !important;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.benefits__item {
+  display: flex;
+  gap: 12px;
+}
+
+.benefits-heading {
+  font-family: "TT-Medium", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2F2047;
+}
+
+.benefits__item__icon {
+  flex-basis: 64px;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border: 1px solid #E8E5EF;
+  border-radius: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits__item__description {
+  flex-basis: 100%;
+  margin-top: 8px;
+}
+
+.before-session {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 48px 0;
+}
+
+.hero-section {
+  padding-top: 56px;
+}
+
+.hero-section {
+  padding-bottom: 32px;
+}
+
+.therapist-section {
+  padding-top: 24px;
+  padding-bottom: 64px;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.main-heading {
+  font-family: "Quincy Light", "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+  line-height: 1;
+  color: #2F2047;
+}
+
+.paragraph {
+  font-family: "TT-Regular", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #554C65;
+  margin: 0;
+}
+
+.paragraph--center {
+  text-align: center;
+}
+
+.paragraph--benefits {
+  margin-top: 8px;
+}
+
+.paragraph--up-sale-therapist {
+  margin-top: 8px;
+}
+
+.paragraph--white {
+  color: #E9E3F3;
+  line-height: 1.25;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.paragraph--plus {
+  font-size: 1.125rem;
+  line-height: 1.33333;
+}
+
+.paragraph--hero {
+  margin-top: 24px;
+}
+
+.paragraph--result-number {
+  color: #978CA8;
+}
+
+.paragraph--price {
+  color: #2F2047;
+}
+
+.paragraph--therapist-block {
+  margin-top: 16px;
+}
+
+.paragraph--italic {
+  font-style: italic;
+}
+
+.up-sale-block {
+  margin-top: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #E9E6EE;
+}
+
+.price-bold {
+  font-family: "TT-DemiBold", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+}
+
+.results-nav {
+  border-bottom: 1px solid #E9E6EE;
+  padding-bottom: 24px;
+}
+
+.results {
+  margin-top: 56px;
+}
+
+.layout--therapist-result {
+  flex-wrap: wrap;
+  gap: 56px;
+}
+
+.layout--speciality {
+  margin-top: 16px;
+  gap: 16px;
+}
+
+.layout--reviews {
+  margin-top: 16px;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.therapist-item {
+  width: 100%;
+  cursor: pointer;
+}
+
+.therapist-item__image {
+  width: 100%;
+}
+
+figure > img {
+  width: 100%;
+}
+
+.abs-wrapper {
+  position: relative;
+}
+
+.therapist-rating {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 16px;
+  bottom: -24px;
+  background: #FFCB77;
+  border-radius: 50px;
+}
+
+.therapist-rating--preview {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: -8px;
+}
+
+.therapist-item__name {
+  font-family: "Quincy Light", "Times New Roman", serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #2F2047;
+  margin-top: 12px;
+}
+
+.item-label {
+  color: #6A6375;
+}
+
+.circle-break {
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  border-radius: 4px;
+  background: #6A6375;
+  margin-top: -4px;
+}
+
+.therapist-item__price {
+  margin-top: 12px;
+}
+
+.filter-block,
+.therapist-preview,
+.booking,
+.booking-confirmation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 1000;
+  transform: translateX(100%);
+}
+
+.booking {
+  z-index: 1200;
+}
+
+.therapist-profile-image {
+  width: 88px;
+  height: 88px;
+  border-radius: 88px;
+  overflow: hidden;
+}
+
+.welcome-message {
+  background: #2F2047;
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block-heading {
+  font-family: "TT-Medium", "Helvetica", "Arial", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -.01em;
+  line-height: 1.2;
+  color: #2F2047;
+  text-align: center;
+}
+
+.block-heading--welcome {
+  padding-left: 32px;
+  color: #ffffff;
+}
+
+.waving-icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(6.23deg);
+  margin-top: -4px;
+}
+
+.therapist-preview__price {
+  font-family: "TT-Regular", "Helvetica", "Arial", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #ffffff;
+  height: 64px;
+  width: 100%;
+  background: #8964C3;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  gap: 4px;
+}
+
+.container--scr-overlay {
+  padding: 40px 20px 120px;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.container--therapist-preview {
+  padding-top: 0;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+.section-heading {
+  font-family: "TT-Medium", "Helvetica", "Arial", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: -.01em;
+  color: #2F2047;
+}
+
+.item-block {
+  width: 100%;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #E9E6EE;
+  position: relative;
+}
+
+.item-block--no-border {
+  border-bottom: none;
+}
+
+.item-block:last-of-type {
+  border-bottom: none;
+}
+
+.item-block--center {
+  display: flex;
+  justify-content: center;
+}
+
+.item-block__title {
+  font-family: "TT-Medium", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: #685784;
+  text-transform: uppercase;
+}
+
+.close-button {
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(47, 32, 71, 0.3);
+  backdrop-filter: blur(24px);
+  padding: 0;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.close-button--preview {
+  position: absolute;
+  left: 20px;
+  top: 48px;
+  z-index: 1000;
+}
+
+.close-button--booking-confirmation {
+  position: absolute;
+  left: 20px;
+  top: 40px;
+}
+
+.clear-button {
+  appearance: none;
+  font-family: "TT-Regular", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  color: #554C65;
+  background: none;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.filter__checkbox {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 32px;
+  font-family: "TT-Regular", "Helvetica", "Arial", sans-serif;
+  font-size: 1.125rem;
+  color: #554C65;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background: none;
+  border: 2px solid #E8E5EF;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #8964C3;
+  border: 2px solid #8964C3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.input-container {
+  position: relative;
+  flex-basis: 100%;
+}
+
+.input-container > input {
+  width: 100%;
+  height: 56px;
+  border: 1px solid #E8E5EF;
+  border-radius: 3px;
+  font-family: "TT-Regular", "Helvetica", "Arial", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #554C65;
+  padding-left: 32px;
+  padding-top: 24px;
+  outline: none;
+}
+
+.price-mark {
+  position: absolute;
+  left: 12px;
+  top: 24px;
+  font-family: "TT-Regular", "Helvetica", "Arial", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #554C65;
+}
+
+.input-label {
+  font-family: "TT-Regular", "Helvetica", "Arial", sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+  color: #9A91A7;
+  position: absolute;
+  left: 12px;
+  top: 8px;
+}
+
+.therapist-review {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed #E9E6EE;
+}
+
+.therapist-review__comment {
+  width: 100%;
+  font-family: "Quincy Light", "Times New Roman", serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #2F2047;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.therapist-review__comment:before,
+.therapist-review__comment:after {
+  content: "\"";
+}
+
+.therapist-review__description {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-name {
+  font-family: "TT-Medium", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #554C65;
+}
+
+.review-rating {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.review-rating__circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #E6E2ED;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-rating__circle:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #8964C3;
+}
+
+.review-rating__circle--1o2:after {
+  position: relative;
+  left: -50%;
+}
+
+.date-time-info {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.calendar-picker,
+.time-picker,
+.info-input {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.time-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.time-picker__time {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #E8E5EF;
+  border-radius: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.info-input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-container input::placeholder {
+  color: #B0A7BE;
+}
+
+.info-input > .input-container {
+  flex-basis: 0;
+}
+
+.info-input > .input-container input {
+  padding: 8px 16px 0;
+}
+
+.input-note {
+  display: block;
+  font-family: "TT-Regular", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  letter-spacing: .01em;
+  color: #958CA4;
+  line-height: 1.14285;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.calendar-picker {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.month-picker {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.month-picker__month {
+  color: #2F2047;
+}
+
+.month-picker__navigation {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.day-labels {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.day-labels__day {
+  font-family: "TT-Medium", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #685784;
+  text-align: center;
+  width: 48px;
+}
+
+.day-picker {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc((100% - 336px) / 6);
+}
+
+.day-picker__day {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  padding-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "TT-Regular", "Helvetica", "Arial", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 0.83333;
+  color: #C1B6D3;
+  margin-top: 10px;
+}
+
+.day-picker__day--available {
+  color: #2F2047;
+  border: 1px solid #E8E5EF;
+  cursor: pointer;
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+

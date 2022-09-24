@@ -1,0 +1,697 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header class="header header--fixed js-header">
+    <div class="container">
+      <div class="layout layout--header">
+        <div class="logo">
+          <svg width="74" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.108 19.028C16.156 19.028 15.736 19.616 15.708 20.512C15.68 21.688 14.42 22.64 12.824 21.408L10.444 19.56C14.784 19.056 18.06 15.276 18.06 10.348C18.06 5.168 14.28 1.36 9.464 1.36C4.592 1.36 0.84 5.056 0.84 10.348C0.84 13.288 1.904 15.696 3.612 17.348C2.408 17.824 1.484 18.832 1.456 20.008C1.456 20.792 2.044 21.464 2.772 21.492C3.5 21.492 4.144 20.932 4.144 20.148C4.2 19.084 5.488 18.44 7.028 19.532L10.78 22.22C12.124 23.172 13.44 23.648 14.588 23.704C16.66 23.732 18.452 22.276 18.48 20.456C18.508 19.616 18.004 19.056 17.108 19.028ZM9.464 2.9C12.096 2.9 14.616 6.064 14.616 11.188C14.616 16.704 12.376 17.824 9.548 17.824C6.944 17.824 4.284 14.548 4.284 9.508C4.284 4.384 6.384 2.9 9.464 2.9ZM32.5135 16.368V6.764C32.5135 6.344 32.2615 6.092 31.8135 6.176L28.5655 6.68V7.688H28.9855C29.5455 7.688 29.7415 7.94 29.7415 8.584V14.24C29.1535 16.06 28.2855 17.432 26.3815 17.432C24.6175 17.432 23.7215 16.648 23.7215 14.268V6.764C23.7215 6.344 23.4135 6.148 23.0215 6.176L19.7455 6.68V7.688H20.1655C20.7255 7.688 20.9495 7.94 20.9495 8.584V14.464C20.9495 17.628 22.8815 19.224 25.6255 19.224C28.2855 19.224 29.3775 17.124 29.7415 16.06V16.116C29.9935 18.664 31.0015 19.448 32.0655 19.112L34.0815 18.524V17.376C32.9895 17.544 32.5135 17.292 32.5135 16.368ZM46.8361 11.384C46.8361 8.36 44.1201 6.176 41.1241 6.176C37.9601 6.176 35.0481 8.5 35.0481 12.616C35.0481 16.508 37.9041 19.28 41.4601 19.28C44.3161 19.28 45.6321 17.824 46.3321 16.9L45.3521 15.836C44.6801 16.648 43.6721 17.628 41.8801 17.628C39.6121 17.628 38.0721 15.696 38.0721 13.092H45.2681C46.3041 13.092 46.8361 12.448 46.8361 11.384ZM43.9801 11.608H38.0721C38.0721 9.144 39.1641 7.632 41.1241 7.632C43.0841 7.632 44.0081 9.144 43.9801 11.608ZM51.9726 16.2V2.704C51.9726 1.472 52.1966 0.463998 51.1606 0.631999L47.5486 1.164V2.256C48.6126 2.116 49.2006 2.424 49.2006 3.348V16.928C49.2006 18.216 49.9566 19.224 51.3566 19.224C52.0566 19.224 52.7006 18.972 53.3446 18.664L53.7926 17.348C52.2806 17.74 51.9726 17.124 51.9726 16.2ZM57.344 3.684C58.268 3.684 59.052 2.928 59.052 1.948C59.052 1.024 58.268 0.267999 57.344 0.267999C56.42 0.267999 55.636 1.024 55.636 1.948C55.636 2.928 56.42 3.684 57.344 3.684ZM58.94 17.152V7.156C58.94 6.54 58.688 6.232 58.044 6.288L54.824 6.54V7.8H55.384C55.944 7.8 56.168 8.024 56.168 8.668V17.152C56.168 17.796 55.692 17.936 54.936 17.936V19H60.144V17.936C59.416 17.936 58.94 17.796 58.94 17.152ZM67.6121 6.176C64.4481 6.176 61.3681 8.556 61.3681 12.784C61.3681 16.704 64.4481 19.28 67.6681 19.28C70.8321 19.28 73.8841 16.704 73.8841 12.56C73.8841 8.556 70.8321 6.176 67.6121 6.176ZM70.9441 13.4C70.9441 16.48 69.7961 17.628 67.9201 17.628C65.9041 17.628 64.3361 15.416 64.3361 11.916C64.3361 8.864 65.4561 7.66 67.3321 7.66C69.3761 7.66 70.9441 9.816 70.9441 13.4Z" fill="#8964C3"/>
+          </svg>
+        </div>
+        <div class="button button--outline js-filter-btn">
+                <span class="button__icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 8C12.5 7.72386 12.2761 7.5 12 7.5H4C3.72386 7.5 3.5 7.72386 3.5 8C3.5 8.27614 3.72386 8.5 4 8.5H12C12.2761 8.5 12.5 8.27614 12.5 8Z" fill="#554C65"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15 5C15 4.72386 14.7761 4.5 14.5 4.5H1.5C1.22386 4.5 1 4.72386 1 5C1 5.27614 1.22386 5.5 1.5 5.5H14.5C14.7761 5.5 15 5.27614 15 5Z" fill="#554C65"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 11C10 10.7239 9.77614 10.5 9.5 10.5H6.5C6.22386 10.5 6 10.7239 6 11C6 11.2761 6.22386 11.5 6.5 11.5H9.5C9.77614 11.5 10 11.2761 10 11Z" fill="#554C65"/>
+</svg>
+                </span>
+          <span class="button__text">Filter</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <header class="header">
+      <div class="container">
+        <div class="layout layout--header">
+          <div class="logo">
+            <svg width="74" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.108 19.028C16.156 19.028 15.736 19.616 15.708 20.512C15.68 21.688 14.42 22.64 12.824 21.408L10.444 19.56C14.784 19.056 18.06 15.276 18.06 10.348C18.06 5.168 14.28 1.36 9.464 1.36C4.592 1.36 0.84 5.056 0.84 10.348C0.84 13.288 1.904 15.696 3.612 17.348C2.408 17.824 1.484 18.832 1.456 20.008C1.456 20.792 2.044 21.464 2.772 21.492C3.5 21.492 4.144 20.932 4.144 20.148C4.2 19.084 5.488 18.44 7.028 19.532L10.78 22.22C12.124 23.172 13.44 23.648 14.588 23.704C16.66 23.732 18.452 22.276 18.48 20.456C18.508 19.616 18.004 19.056 17.108 19.028ZM9.464 2.9C12.096 2.9 14.616 6.064 14.616 11.188C14.616 16.704 12.376 17.824 9.548 17.824C6.944 17.824 4.284 14.548 4.284 9.508C4.284 4.384 6.384 2.9 9.464 2.9ZM32.5135 16.368V6.764C32.5135 6.344 32.2615 6.092 31.8135 6.176L28.5655 6.68V7.688H28.9855C29.5455 7.688 29.7415 7.94 29.7415 8.584V14.24C29.1535 16.06 28.2855 17.432 26.3815 17.432C24.6175 17.432 23.7215 16.648 23.7215 14.268V6.764C23.7215 6.344 23.4135 6.148 23.0215 6.176L19.7455 6.68V7.688H20.1655C20.7255 7.688 20.9495 7.94 20.9495 8.584V14.464C20.9495 17.628 22.8815 19.224 25.6255 19.224C28.2855 19.224 29.3775 17.124 29.7415 16.06V16.116C29.9935 18.664 31.0015 19.448 32.0655 19.112L34.0815 18.524V17.376C32.9895 17.544 32.5135 17.292 32.5135 16.368ZM46.8361 11.384C46.8361 8.36 44.1201 6.176 41.1241 6.176C37.9601 6.176 35.0481 8.5 35.0481 12.616C35.0481 16.508 37.9041 19.28 41.4601 19.28C44.3161 19.28 45.6321 17.824 46.3321 16.9L45.3521 15.836C44.6801 16.648 43.6721 17.628 41.8801 17.628C39.6121 17.628 38.0721 15.696 38.0721 13.092H45.2681C46.3041 13.092 46.8361 12.448 46.8361 11.384ZM43.9801 11.608H38.0721C38.0721 9.144 39.1641 7.632 41.1241 7.632C43.0841 7.632 44.0081 9.144 43.9801 11.608ZM51.9726 16.2V2.704C51.9726 1.472 52.1966 0.463998 51.1606 0.631999L47.5486 1.164V2.256C48.6126 2.116 49.2006 2.424 49.2006 3.348V16.928C49.2006 18.216 49.9566 19.224 51.3566 19.224C52.0566 19.224 52.7006 18.972 53.3446 18.664L53.7926 17.348C52.2806 17.74 51.9726 17.124 51.9726 16.2ZM57.344 3.684C58.268 3.684 59.052 2.928 59.052 1.948C59.052 1.024 58.268 0.267999 57.344 0.267999C56.42 0.267999 55.636 1.024 55.636 1.948C55.636 2.928 56.42 3.684 57.344 3.684ZM58.94 17.152V7.156C58.94 6.54 58.688 6.232 58.044 6.288L54.824 6.54V7.8H55.384C55.944 7.8 56.168 8.024 56.168 8.668V17.152C56.168 17.796 55.692 17.936 54.936 17.936V19H60.144V17.936C59.416 17.936 58.94 17.796 58.94 17.152ZM67.6121 6.176C64.4481 6.176 61.3681 8.556 61.3681 12.784C61.3681 16.704 64.4481 19.28 67.6681 19.28C70.8321 19.28 73.8841 16.704 73.8841 12.56C73.8841 8.556 70.8321 6.176 67.6121 6.176ZM70.9441 13.4C70.9441 16.48 69.7961 17.628 67.9201 17.628C65.9041 17.628 64.3361 15.416 64.3361 11.916C64.3361 8.864 65.4561 7.66 67.3321 7.66C69.3761 7.66 70.9441 9.816 70.9441 13.4Z" fill="#8964C3"/>
+            </svg>
+          </div>
+          <div class="button button--purple">
+            <span class="button__text">Get recommendation</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="filter-block js-filter-block">
+      <div class="container container--scr-overlay">
+        <div class="layout layout--filters">
+          <div class="layout layout--filter-header">
+            <h3 class="section-heading">Filters</h3>
+            <div class="layout layout--filter-action">
+              <button class="clear-button">Clear</button>
+              <button class="close-button js-close">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8536 3.14645C13.0488 3.34171 13.0488 3.65829 12.8536 3.85355L3.85355 12.8536C3.65829 13.0488 3.34171 13.0488 3.14645 12.8536C2.95118 12.6583 2.95118 12.3417 3.14645 12.1464L12.1464 3.14645C12.3417 2.95118 12.6583 2.95118 12.8536 3.14645Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.14645 3.14645C3.34171 2.95118 3.65829 2.95118 3.85355 3.14645L12.8536 12.1464C13.0488 12.3417 13.0488 12.6583 12.8536 12.8536C12.6583 13.0488 12.3417 13.0488 12.1464 12.8536L3.14645 3.85355C2.95118 3.65829 2.95118 3.34171 3.14645 3.14645Z" fill="white"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="item-block">
+            <h6 class="item-block__title">Price range</h6>
+            <div class="layout layout--price">
+              <div class="input-container">
+                <input type="number" value="100" min="100" max="300">
+                <span class="price-mark">€</span>
+                <span class="input-label">min.price</span>
+              </div>
+              <div class="price-divider"></div>
+              <div class="input-container">
+                <input type="number" value="300" min="100" max="300">
+                <span class="price-mark">€</span>
+                <span class="input-label">max.price</span>
+              </div>
+            </div>
+          </div>
+          <div class="item-block">
+            <h6 class="item-block__title">Speciality</h6>
+            <div class="filter__checkbox">
+              <label class="checkbox-container">Anxiety
+                <input type="checkbox">
+                <span class="checkmark">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9.78571L7.375 13L13 4" stroke="white" stroke-width="1.5"/>
+</svg>
+                </span>
+              </label>
+              <label class="checkbox-container">AIDS
+                <input type="checkbox">
+                <span class="checkmark">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9.78571L7.375 13L13 4" stroke="white" stroke-width="1.5"/>
+</svg>
+                </span>
+              </label>
+              <label class="checkbox-container">Brain stimulation
+                <input type="checkbox">
+                <span class="checkmark">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9.78571L7.375 13L13 4" stroke="white" stroke-width="1.5"/>
+</svg>
+                </span>
+              </label>
+              <label class="checkbox-container">Eating disorder
+                <input type="checkbox">
+                <span class="checkmark">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9.78571L7.375 13L13 4" stroke="white" stroke-width="1.5"/>
+</svg>
+                </span>
+              </label>
+              <label class="checkbox-container">Geriatric
+                <input type="checkbox">
+                <span class="checkmark">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9.78571L7.375 13L13 4" stroke="white" stroke-width="1.5"/>
+</svg>
+                </span>
+              </label>
+              <label class="checkbox-container">Mood disorder
+                <input type="checkbox">
+                <span class="checkmark">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9.78571L7.375 13L13 4" stroke="white" stroke-width="1.5"/>
+</svg>
+                </span>
+              </label>
+              <label class="checkbox-container">Memory
+                <input type="checkbox">
+                <span class="checkmark">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9.78571L7.375 13L13 4" stroke="white" stroke-width="1.5"/>
+</svg>
+                </span>
+              </label>
+              <label class="checkbox-container">OCD
+                <input type="checkbox">
+                <span class="checkmark">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9.78571L7.375 13L13 4" stroke="white" stroke-width="1.5"/>
+</svg>
+                </span>
+              </label>
+              <label class="checkbox-container">Behavioral sleep
+                <input type="checkbox">
+                <span class="checkmark">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9.78571L7.375 13L13 4" stroke="white" stroke-width="1.5"/>
+</svg>
+                </span>
+              </label>
+              <label class="checkbox-container">Substance abuse
+                <input type="checkbox">
+                <span class="checkmark">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9.78571L7.375 13L13 4" stroke="white" stroke-width="1.5"/>
+</svg>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="item-block">
+            <h6 class="item-block__title">Gender</h6>
+            <div class="filter__checkbox">
+              <label class="checkbox-container">Male
+                <input type="checkbox">
+                <span class="checkmark">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9.78571L7.375 13L13 4" stroke="white" stroke-width="1.5"/>
+</svg>
+                </span>
+              </label>
+              <label class="checkbox-container">Female
+                <input type="checkbox">
+                <span class="checkmark">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9.78571L7.375 13L13 4" stroke="white" stroke-width="1.5"/>
+</svg>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="item-block">
+            <h6 class="item-block__title">Ethnicity</h6>
+            <div class="filter__checkbox">
+              <label class="checkbox-container">White
+                <input type="checkbox">
+                <span class="checkmark">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9.78571L7.375 13L13 4" stroke="white" stroke-width="1.5"/>
+</svg>
+                </span>
+              </label>
+              <label class="checkbox-container">Black or African American
+                <input type="checkbox">
+                <span class="checkmark">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9.78571L7.375 13L13 4" stroke="white" stroke-width="1.5"/>
+</svg>
+                </span>
+              </label>
+              <label class="checkbox-container">American Indian or Alaska Native
+                <input type="checkbox">
+                <span class="checkmark">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9.78571L7.375 13L13 4" stroke="white" stroke-width="1.5"/>
+</svg>
+                </span>
+              </label>
+              <label class="checkbox-container">Asian
+                <input type="checkbox">
+                <span class="checkmark">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9.78571L7.375 13L13 4" stroke="white" stroke-width="1.5"/>
+</svg>
+                </span>
+              </label>
+              <label class="checkbox-container">Hispanic or Latino
+                <input type="checkbox">
+                <span class="checkmark">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9.78571L7.375 13L13 4" stroke="white" stroke-width="1.5"/>
+</svg>
+                </span>
+              </label>
+              <label class="checkbox-container">Native Hawaiian or Other Pacific Islander
+                <input type="checkbox">
+                <span class="checkmark">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9.78571L7.375 13L13 4" stroke="white" stroke-width="1.5"/>
+</svg>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="button button--purple button--full-w">
+            <span class="button__text">Apply filters</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="therapist-preview js-therapist-preview">
+      <div class="container container--therapist-preview container--scr-overlay">
+        <button class="close-button close-button--preview js-close">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8536 3.14645C13.0488 3.34171 13.0488 3.65829 12.8536 3.85355L3.85355 12.8536C3.65829 13.0488 3.34171 13.0488 3.14645 12.8536C2.95118 12.6583 2.95118 12.3417 3.14645 12.1464L12.1464 3.14645C12.3417 2.95118 12.6583 2.95118 12.8536 3.14645Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.14645 3.14645C3.34171 2.95118 3.65829 2.95118 3.85355 3.14645L12.8536 12.1464C13.0488 12.3417 13.0488 12.6583 12.8536 12.8536C12.6583 13.0488 12.3417 13.0488 12.1464 12.8536L3.14645 3.85355C2.95118 3.65829 2.95118 3.34171 3.14645 3.14645Z" fill="white"/>
+          </svg>
+        </button>
+        <figure class="therapist-item__image full-w">
+          <img class="js-therapist-image-preview" src="" alt="Maya Angelou">
+        </figure>
+        <div class="therapist-preview__price full-w">
+          <span class="price-bold js-therapist-price-preview">€220</span><span>per session</span>
+        </div>
+        <div class="layout layout--therapist-blocks">
+          <div class="item-block">
+            <h2 class="js-therapist-name-preview therapist-item__name">Maya Angelou</h2>
+            <div class="therapist-item__description">
+              <div class="layout layout--therapist-item-description">
+                <p class="paragraph item-label">General psychiatrist</p>
+                <span class="circle-break"></span>
+                <p class="paragraph item-label">13 years</p>
+              </div>
+            </div>
+            <div class="therapist-rating therapist-rating--preview">
+              <span class="inline-text">4.28</span>
+            </div>
+          </div>
+          <div class="item-block">
+            <h6 class="item-block__title">About maya</h6>
+            <p class="paragraph paragraph--therapist-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis venenatis diam vitae dictum. Vivamus ut nisi eget odio iaculis bibendum. Quisque gravida lectus nec mollis maximus. Morbi ut lectus urna. Etiam tincidunt placerat metus ut maximus. Nullam sed purus et nibh convallis vestibulum. Cras luctus ac nisi at semper. In hac habitasse platea dictumst. Curabitur consequat commodo ante, sed venenatis ipsum euismod ac. Proin et arcu a nunc varius vestibulum. Ut consectetur rutrum eros, nec lacinia elit commodo at. In hac habitasse platea dictumst. Curabitur luctus sagittis turpis ac tristique.</p>
+          </div>
+          <div class="item-block">
+            <h6 class="item-block__title">Speciality</h6>
+            <div class="layout layout--speciality">
+              <p class="paragraph paragraph--italic">Anxiety</p>
+              <p class="paragraph paragraph--italic">Depression</p>
+              <p class="paragraph paragraph--italic">Addiction</p>
+              <p class="paragraph paragraph--italic">Geriatic</p>
+            </div>
+          </div>
+          <div class="item-block">
+            <h6 class="item-block__title">Session approach</h6>
+            <p class="paragraph paragraph--therapist-block">Integer viverra lectus non mi pulvinar porta. Donec sed placerat sem, ac accumsan ante. Morbi dignissim nibh eros, ac tristique libero viverra a. Pellentesque sed convallis felis, vitae interdum orci. Maecenas tincidunt lorem nec eros pulvinar, eu lobortis metus lacinia. Praesent dictum pharetra leo eget hendrerit.
+              Sed a dolor sapien. Nunc ac ligula et lacus tristique blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. In congue, leo vitae rutrum fringilla, risus turpis varius dolor, id vehicula ex magna ut ligula.</p>
+          </div>
+          <div class="item-block">
+            <h6 class="item-block__title">Reviews</h6>
+            <div class="layout layout--reviews">
+              <div class="therapist-review">
+                <p class="therapist-review__comment">
+                  Maya helped me cure my depression throughout a few sessions. Sometimes you need someone to talk with
+                </p>
+                <div class="therapist-review__description">
+                  <p class="author-name">Pedro Kalcini</p>
+                  <div class="review-rating">
+                    <div class="review-rating__circle review-rating__circle--full"></div>
+                    <div class="review-rating__circle review-rating__circle--full"></div>
+                    <div class="review-rating__circle review-rating__circle--full"></div>
+                    <div class="review-rating__circle review-rating__circle--full"></div>
+                    <div class="review-rating__circle"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="therapist-review">
+                <p class="therapist-review__comment">
+                  I never felt so powerful and fulfilled
+                </p>
+                <div class="therapist-review__description">
+                  <p class="author-name">Margo Koni</p>
+                  <div class="review-rating">
+                    <div class="review-rating__circle review-rating__circle--full"></div>
+                    <div class="review-rating__circle review-rating__circle--full"></div>
+                    <div class="review-rating__circle review-rating__circle--full"></div>
+                    <div class="review-rating__circle review-rating__circle--full"></div>
+                    <div class="review-rating__circle review-rating__circle--1o2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="button button--book js-book">
+          Book
+        </button>
+      </div>
+      <div class="booking js-booking">
+        <div class="container container--scr-overlay">
+          <div class="layout layout--booking">
+            <div class="item-block item-block--no-border">
+              <div class="layout layout--block">
+                <div class="block-wrapper">
+                  <h2 class="js-therapist-name-booking therapist-item__name">Maya Angelou</h2>
+                  <div class="therapist-item__description">
+                    <div class="layout layout--therapist-item-description">
+                      <p class="paragraph item-label">General psychiatrist</p>
+                      <span class="circle-break"></span>
+                      <p class="paragraph item-label">13 years</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="close-button js-close">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8536 3.14645C13.0488 3.34171 13.0488 3.65829 12.8536 3.85355L3.85355 12.8536C3.65829 13.0488 3.34171 13.0488 3.14645 12.8536C2.95118 12.6583 2.95118 12.3417 3.14645 12.1464L12.1464 3.14645C12.3417 2.95118 12.6583 2.95118 12.8536 3.14645Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.14645 3.14645C3.34171 2.95118 3.65829 2.95118 3.85355 3.14645L12.8536 12.1464C13.0488 12.3417 13.0488 12.6583 12.8536 12.8536C12.6583 13.0488 12.3417 13.0488 12.1464 12.8536L3.14645 3.85355C2.95118 3.65829 2.95118 3.34171 3.14645 3.14645Z" fill="white"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="item-block item-block--center">
+              <h6 class="item-block__title">Book a session</h6>
+              <button class="button button--icon button--carousel-back js-carousel-back-button" disabled>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3536 13.3536C10.1583 13.5488 9.84171 13.5488 9.64645 13.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L9.64645 2.64645C9.84171 2.45118 10.1583 2.45118 10.3536 2.64645C10.5488 2.84171 10.5488 3.15829 10.3536 3.35355L5.70711 8L10.3536 12.6464C10.5488 12.8417 10.5488 13.1583 10.3536 13.3536Z" fill="#2F2047"/>
+                </svg>
+              </button>
+            </div>
+            <div class="date-time-info">
+              <div class="carousel-wrap js-carousel">
+                <div class="calendar-picker">
+                  <div class="month-picker">
+                    <span class="paragraph month-picker__month js-month-picker"></span>
+                    <div class="month-picker__navigation">
+                      <button class="button button--icon js-previous-date-button" disabled>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3536 13.3536C10.1583 13.5488 9.84171 13.5488 9.64645 13.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L9.64645 2.64645C9.84171 2.45118 10.1583 2.45118 10.3536 2.64645C10.5488 2.84171 10.5488 3.15829 10.3536 3.35355L5.70711 8L10.3536 12.6464C10.5488 12.8417 10.5488 13.1583 10.3536 13.3536Z" fill="#2F2047"/>
+                        </svg>
+                      </button>
+                      <button class="button button--icon js-next-date-button">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.64645 2.64645C5.84171 2.45118 6.15829 2.45118 6.35355 2.64645L11.3536 7.64645C11.5488 7.84171 11.5488 8.15829 11.3536 8.35355L6.35355 13.3536C6.15829 13.5488 5.84171 13.5488 5.64645 13.3536C5.45118 13.1583 5.45118 12.8417 5.64645 12.6464L10.2929 8L5.64645 3.35355C5.45118 3.15829 5.45118 2.84171 5.64645 2.64645Z" fill="#2F2047"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="day-labels">
+                    <div class="day-labels__day">M</div>
+                    <div class="day-labels__day">T</div>
+                    <div class="day-labels__day">W</div>
+                    <div class="day-labels__day">T</div>
+                    <div class="day-labels__day">F</div>
+                    <div class="day-labels__day">S</div>
+                    <div class="day-labels__day">S</div>
+                  </div>
+                  <div class="day-picker js-day-picker">
+                  </div>
+                </div>
+                <div class="time-picker">
+                  <div class="time-picker__time js-time-picker"><span class="paragraph paragraph--plus">10:00</span></div>
+                  <div class="time-picker__time js-time-picker"><span class="paragraph paragraph--plus">15:00</span></div>
+                  <div class="time-picker__time js-time-picker"><span class="paragraph paragraph--plus">18:00</span></div>
+                </div>
+                <div class="info-input">
+                  <label class="input-container">
+                    <input type="email" placeholder="Email">
+                  </label>
+                  <label class="input-container">
+                    <input type="text" placeholder="Your name">
+                  </label>
+                  <label class="input-container">
+                    <input type="tel" placeholder="Phone">
+                    <span class="input-note">We need your phone number so that therapist and our team can always reach out to you for any additional information you would need</span>
+                  </label>
+                  <button class="button button--purple button--full-w button--payment js-payment-button">
+                    Proceed to payment
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="booking-confirmation js-booking-confirmation">
+      <div class="container container--booking-confirmation container--scr-overlay">
+        <button class="close-button close-button--booking-confirmation js-close">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8536 3.14645C13.0488 3.34171 13.0488 3.65829 12.8536 3.85355L3.85355 12.8536C3.65829 13.0488 3.34171 13.0488 3.14645 12.8536C2.95118 12.6583 2.95118 12.3417 3.14645 12.1464L12.1464 3.14645C12.3417 2.95118 12.6583 2.95118 12.8536 3.14645Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.14645 3.14645C3.34171 2.95118 3.65829 2.95118 3.85355 3.14645L12.8536 12.1464C13.0488 12.3417 13.0488 12.6583 12.8536 12.8536C12.6583 13.0488 12.3417 13.0488 12.1464 12.8536L3.14645 3.85355C2.95118 3.65829 2.95118 3.34171 3.14645 3.14645Z" fill="white"/>
+          </svg>
+        </button>
+        <div class="booking-therapist-information">
+          <figure class="therapist-profile-image">
+            <img class="js-therapist-image-booking-confirmation" src="img/maya-angelou.png" alt="Maya Angelou">
+          </figure>
+          <h2 class="js-therapist-name-booking-confirmation therapist-item__name">Maya Angelou</h2>
+          <div class="therapist-item__description">
+            <div class="layout layout--therapist-item-description">
+              <p class="paragraph item-label">General psychiatrist</p>
+              <span class="circle-break"></span>
+              <p class="paragraph item-label">13 years</p>
+            </div>
+          </div>
+        </div>
+        <div class="welcome-message full-w">
+          <div class="abs-wrapper">
+            <svg class="waving-icon" width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_85_1273)">
+                <path d="M13.5113 2.05367C12.8159 2.24656 12.3007 2.9495 11.9593 4.17596C11.8411 4.61101 11.7993 4.90823 11.6425 6.5179C11.2379 10.6138 11.1971 10.9017 11.0013 10.8803C10.8382 10.8625 10.7659 10.402 10.6422 8.55422C10.5206 6.73026 10.3734 5.83243 10.0847 5.10777C9.76633 4.30914 9.35247 3.91032 8.72746 3.80439C8.25987 3.72507 8.02865 3.813 7.81759 4.14833C7.53222 4.60287 7.34271 6.16654 7.3322 8.20713C7.33208 8.94271 7.34954 12.8442 7.35808 13.2412L7.36062 13.4773L6.95955 13.0044C6.49571 12.4587 5.83081 11.8108 5.48091 11.5605C4.66656 10.9859 3.75458 11.0467 3.30967 11.7102C3.19147 11.8859 3.08045 12.5575 3.11424 12.896C3.17598 13.4968 3.45436 14.2298 3.96182 15.1104C4.11245 15.372 4.35762 15.8043 4.5124 16.0711C4.96743 16.8705 5.27478 17.5972 5.66743 18.7953C6.10692 20.1258 6.15267 20.2251 6.82812 21.5107C7.68801 23.137 7.85168 23.7113 7.74852 24.6996C7.67987 25.3287 7.72104 25.47 7.96801 25.4969C8.26624 25.5295 8.4657 25.0844 8.51437 24.2928C8.56447 23.4448 8.3504 22.7707 7.51898 21.1428C6.99518 20.1096 6.7273 19.4532 6.35795 18.2576C5.98861 17.0621 5.69642 16.4125 4.87727 14.9745C4.29551 13.9538 4.01866 13.2068 4.01343 12.6499C4.01159 12.2347 4.17071 12.0729 4.544 12.1089C5.19689 12.1755 6.09391 13.2023 7.28124 15.2416C7.56378 15.7204 7.72313 15.9452 7.82056 16.003C8.16776 16.1918 8.63214 15.9548 8.67486 15.5634C8.69825 15.3491 8.66081 15.2601 8.37217 14.8372L8.18113 14.557L8.232 13.5724C8.28915 12.6167 8.29944 11.7879 8.28514 9.24005C8.27868 7.78702 8.29743 7.05348 8.36585 6.03772C8.42273 5.21403 8.50112 4.7982 8.61533 4.70221C8.81122 4.54912 9.12477 5.00301 9.36857 5.7935C9.62906 6.64711 9.72426 7.41667 9.84601 9.58486C9.92821 11.1216 10.0121 11.6494 10.2156 11.9876C10.4073 12.3056 10.5908 12.4388 10.8704 12.4693C11.3136 12.5129 11.66 12.3197 11.9252 11.8771C12.208 11.4034 12.2766 11.0337 12.6625 7.97309C13.0208 5.1217 13.1374 4.39883 13.3244 3.89583C13.4902 3.45654 13.7251 3.16154 13.8976 3.18036C14.0187 3.19358 14.2114 3.50224 14.287 3.80284C14.4983 4.63222 14.4895 5.44702 14.2189 8.40229C14.0065 10.7368 13.9884 11.2488 14.0785 12.0649C14.1348 12.5426 14.1946 12.6859 14.3858 12.7916C14.7242 12.9747 15.1364 12.7839 15.4543 12.2905C15.8001 11.7577 16.7058 9.81009 17.693 7.46114C18.214 6.23071 18.5312 5.65705 18.7856 5.48676C19.1624 5.23083 19.527 5.56296 19.4675 6.10816C19.439 6.36911 18.8956 8.28082 18.246 10.4308C17.6715 12.325 17.5672 12.7191 17.5067 13.2737C17.4344 13.9354 17.515 14.3638 17.7482 14.5166C17.9286 14.6353 18.0554 14.6397 18.3503 14.5304C18.807 14.3634 19.0724 14.0057 19.908 12.4418C20.5552 11.2204 20.8742 10.7601 21.3352 10.3813C21.683 10.0892 21.9163 9.98264 22.0955 10.0258C22.2058 10.052 22.2177 10.0721 22.1973 10.2161C22.183 10.3041 21.9801 10.8667 21.7452 11.4634C21.2399 12.7239 20.7946 13.9956 20.2302 15.7541C19.5418 17.914 19.1148 19.018 18.6037 19.9854C18.2938 20.5787 17.9582 21.0608 17.2095 22.0023C16.8702 22.4321 16.4949 22.9334 16.3808 23.1143C15.9303 23.829 15.5785 24.7195 15.4264 25.5517L15.3527 25.968L15.4819 26.1236C15.5898 26.258 15.6432 26.2874 15.8342 26.3082C16.2024 26.3484 16.4313 26.1518 16.4745 25.7557C16.5091 25.4388 16.7117 24.7489 16.8931 24.3396C17.1374 23.7863 17.3196 23.4997 17.9686 22.651C19.421 20.7489 19.967 19.6344 21.0338 16.3841C21.8679 13.8392 22.2679 12.7229 22.7611 11.5743C23.1342 10.705 23.2359 10.3341 23.2052 9.9677C23.1539 9.40097 22.8577 9.09044 22.3078 9.03043C21.9123 8.98255 21.6711 9.03168 21.2859 9.23483C20.6457 9.57048 20.3302 9.99816 19.418 11.7895C18.7162 13.1652 18.3922 13.7145 18.2897 13.7033C18.1312 13.686 18.2627 13.1298 18.7502 11.7732C19.0421 10.9563 19.7269 8.78649 19.9551 7.94849C20.2208 6.98255 20.3863 5.85479 20.3203 5.46565C20.2596 5.1148 20.0307 4.79275 19.7104 4.61634C19.5197 4.50594 19.4281 4.48179 19.1459 4.47457C18.7276 4.46193 18.4137 4.57384 18.0912 4.84986C17.7739 5.12173 17.5906 5.37522 17.3354 5.89906C17.158 6.27108 15.0281 11.4 15.0128 11.4973C15.0107 11.5159 14.9895 11.4948 14.9749 11.4555C14.9406 11.381 14.9745 10.2059 15.0351 9.43444C15.0497 9.21441 15.1435 8.48434 15.2411 7.80655C15.5465 5.69912 15.5329 3.7502 15.2069 3.02147C14.8768 2.28757 14.1575 1.879 13.5113 2.05367Z" fill="white"/>
+                <path d="M4.4826 2.30373C4.08735 2.68497 3.79942 3.42215 3.70746 4.30803C3.59761 5.31455 3.69198 5.65964 4.05478 5.61907C4.28353 5.59688 4.34073 5.46166 4.34905 4.95332C4.35729 4.40252 4.46424 3.76819 4.64583 3.18445C4.8048 2.6784 4.87039 2.33662 4.82828 2.24715C4.77838 2.14268 4.62986 2.16419 4.4826 2.30373Z" fill="white"/>
+                <path d="M5.96891 2.76777C5.68058 3.03337 5.44155 3.36565 5.26938 3.73351C4.95545 4.40655 4.87127 5.56677 5.09195 6.18027C5.17522 6.41098 5.27214 6.47342 5.49726 6.44141C5.66959 6.41778 5.69264 6.29298 5.61776 5.85571C5.47326 5.01947 5.59495 4.25001 6.02751 3.35415C6.14969 3.09871 6.25841 2.83708 6.27019 2.77235C6.29883 2.5963 6.16217 2.59553 5.96891 2.76777Z" fill="white"/>
+                <path d="M9.34455 15.9524C9.18163 16.0195 9.08461 16.1739 9.05401 16.4111C9.02248 16.7 9.16253 16.8426 9.6884 17.0792C10.1837 17.2935 11.0228 17.8142 11.4645 18.1736C11.998 18.5997 12.3264 18.9608 12.8875 19.7388C13.3754 20.4098 13.4428 20.4831 13.5826 20.4984C13.769 20.5187 13.9514 20.3595 13.9738 20.1544C14.0008 19.9075 13.6696 19.1829 13.258 18.591C12.6501 17.723 11.5308 16.8323 10.2463 16.2017C9.63745 15.9042 9.53231 15.8739 9.34455 15.9524Z" fill="white"/>
+                <path d="M22.2248 18.9518C22.198 18.9819 22.0164 19.3063 21.8297 19.6773C21.1836 20.9318 20.3433 22.1934 19.4261 23.2957C19.1607 23.611 18.9397 23.9075 18.9346 23.9541C18.9239 24.052 19.0324 24.1817 19.1676 24.2389C19.3116 24.3017 19.477 24.1689 19.9273 23.6286C20.9421 22.4097 21.7645 21.0094 22.3145 19.5558C22.4665 19.1574 22.4916 19.0564 22.447 18.9902C22.3862 18.8987 22.2982 18.8844 22.2248 18.9518Z" fill="white"/>
+                <path d="M22.6988 21.4791C22.6424 21.5201 22.4302 21.7799 22.2257 22.0547C22.0259 22.3299 21.7316 22.6939 21.5766 22.8609C21.278 23.1772 21.0622 23.4696 21.0526 23.5581C21.0388 23.6839 21.2157 23.8777 21.3555 23.893C21.5186 23.9108 21.7703 23.7213 22.0967 23.3231C22.5956 22.7269 23.0962 21.6828 22.9747 21.4998C22.9103 21.3985 22.8306 21.3945 22.6988 21.4791Z" fill="white"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_85_1273">
+                  <rect width="24" height="24" fill="white" transform="translate(2.60352 0.768951) rotate(6.22823)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h5 class="block-heading block-heading--welcome">Welcome Jane</h5>
+          </div>
+          <p class="paragraph paragraph--white">We will have our session on 22. June at 10:00
+            I’ll send you an invite link to our session on your email</p>
+        </div>
+        <div class="up-sale-block">
+          <h5 class="block-heading"><span class="js-therapist-name-booking-confirmation-up-sale">Maya</span> is a highly sought therapist. We advise you to book her four sessions in advance.</h5>
+          <p class="paragraph paragraph--center paragraph--up-sale-therapist">Optimal results require multiple sessions. The best practice is to book 4 sessions in advance, for you to have allocated time with your therapist.</p>
+          <button class="button button--full-w button--purple button--up-sale-book">Book Maya</button>
+        </div>
+        <div class="before-session">
+          <h6 class="item-block__title">Before our session</h6>
+          <div class="benefits">
+            <div class="benefits__item">
+              <div class="benefits__item__icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 27H11C9.4087 27 7.88258 26.3679 6.75736 25.2426C5.63214 24.1174 5 22.5913 5 21V11C5 9.4087 5.63214 7.88258 6.75736 6.75736C7.88258 5.63214 9.4087 5 11 5H21C22.5913 5 24.1174 5.63214 25.2426 6.75736C26.3679 7.88258 27 9.4087 27 11V17C26 20 20 26 17 27Z" stroke="#8964C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17 27V23C17 21.4087 17.6321 19.8826 18.7574 18.7574C19.8826 17.6321 21.4087 17 23 17H27" stroke="#8964C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="benefits__item__description">
+                <h6 class="benefits-heading">Set goals</h6>
+                <p class="paragraph paragraph--benefits">Before your first session, you should outline clear therapy goals for what you hope to achieve from counseling.</p>
+              </div>
+            </div>
+            <div class="benefits__item">
+              <div class="benefits__item__icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.27497 7.23818C5.70509 7.37379 4.7419 8.12579 4.40416 9.48803C4.35412 9.69144 4.29158 10.1291 4.27281 10.4558C4.2478 10.7886 4.22278 11.0598 4.21027 11.0598C4.19776 11.0598 4.05391 11.0044 3.89129 10.9366C2.67792 10.4188 1.18309 10.8934 0.44506 12.0337C0.0197541 12.681 0.0260086 12.607 0.00724511 16.102C-0.0115184 18.1484 0.00724511 19.3812 0.0510266 19.6093C0.19488 20.3859 0.688986 21.1071 1.35196 21.5016C1.92112 21.8345 2.25886 21.9084 3.31588 21.9084H4.24154V22.5988C4.24154 23.4309 4.31034 23.7083 4.54801 23.8809C4.76692 24.0288 5.1547 24.0412 5.35484 23.9055C5.62379 23.7206 5.68008 23.5111 5.68008 22.6789V21.9084H16H26.3199V22.6789C26.3199 23.5111 26.3762 23.7206 26.6452 23.9055C26.8453 24.0412 27.2331 24.0288 27.452 23.8809C27.6897 23.7083 27.7585 23.4309 27.7585 22.5988V21.9084H28.6904C29.7724 21.9084 30.1477 21.8221 30.7231 21.4461C31.3673 21.027 31.8114 20.3613 31.949 19.6093C31.9928 19.3812 32.0115 18.1484 31.9928 16.102C31.974 12.607 31.9802 12.681 31.5549 12.0337C30.8107 10.8872 29.2908 10.4126 28.0774 10.9427C27.9273 11.0044 27.796 11.0598 27.7897 11.0598C27.7772 11.0598 27.7522 10.7886 27.7272 10.4558C27.6521 9.31544 27.402 8.66206 26.839 8.1073C26.445 7.72513 26.0009 7.48474 25.3692 7.31831C25.0065 7.22585 24.2497 7.21352 16.4065 7.2012C11.6969 7.19503 7.5877 7.21352 7.27497 7.23818ZM25.2567 8.74835C25.6757 8.89629 26.0135 9.21681 26.1698 9.61747C26.2761 9.89485 26.2887 10.1722 26.3074 12.7673L26.3262 15.6212H16.0063H5.68008V12.9214C5.68008 9.96882 5.70509 9.72226 6.04284 9.24763C6.24924 8.95176 6.66829 8.73602 7.16239 8.66206C7.36254 8.63124 11.4342 8.61275 16.2189 8.61891C24.7063 8.62507 24.9189 8.62507 25.2567 8.74835ZM3.47224 12.2865C3.77871 12.4406 4.02263 12.6933 4.14147 12.983C4.22278 13.1741 4.24154 13.5378 4.24154 15.1281V17.0389H16H27.7585V15.1281C27.7585 13.5378 27.7772 13.1741 27.8585 12.983C28.2588 12.0337 29.5472 11.8427 30.2477 12.6255C30.3541 12.7488 30.4729 12.9522 30.5104 13.0755C30.5605 13.2357 30.573 14.2898 30.5605 16.4533L30.5417 19.5969L30.3666 19.8558C30.1602 20.1763 29.8287 20.3983 29.4472 20.4845C29.0469 20.577 2.98439 20.577 2.55908 20.4845C2.11501 20.3921 1.76476 20.1209 1.57712 19.7325L1.42702 19.412V16.3115C1.42702 12.9337 1.42702 12.9583 1.78978 12.5823C2.23385 12.12 2.90933 12.0029 3.47224 12.2865Z" fill="#8964C3"/>
+                </svg>
+              </div>
+              <div class="benefits__item__description">
+                <h6 class="benefits-heading">Find comfortable space and dress</h6>
+                <p class="paragraph paragraph--benefits">Therapy isn’t a job interview or a black-tie event, so there’s no pressure to dress up — unless that’s what makes you comfortable.</p>
+              </div>
+            </div>
+            <div class="benefits__item">
+              <div class="benefits__item__icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.67485 22.125C4.18596 19.613 3.66516 16.6439 4.21023 13.7752C4.7553 10.9064 6.32876 8.33528 8.6352 6.54441C10.9416 4.75355 13.8225 3.86614 16.7368 4.04878C19.6512 4.23143 22.3987 5.47156 24.4635 7.53637C26.5283 9.60118 27.7684 12.3487 27.9511 15.263C28.1337 18.1774 27.2463 21.0582 25.4554 23.3647C23.6646 25.6711 21.0934 27.2446 18.2247 27.7896C15.3559 28.3347 12.3868 27.8139 9.87485 26.325V26.325L5.72485 27.5C5.55482 27.5497 5.37455 27.5528 5.20292 27.5089C5.0313 27.465 4.87464 27.3757 4.74938 27.2505C4.62411 27.1252 4.53485 26.9686 4.49095 26.7969C4.44705 26.6253 4.45012 26.445 4.49985 26.275L5.67485 22.125Z" stroke="#8964C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="benefits__item__description">
+                <h6 class="benefits-heading">Don’t Be Afraid to Ask Questions</h6>
+                <p class="paragraph paragraph--benefits">During your session, you can talk as much or as little as you’d like — it’s all about your comfort. But it’s good to understand that there are no wrong questions in therapy, and even if the therapist doesn’t have all the answers, they can help guide you to the answers.</p>
+              </div>
+            </div>
+            <div class="benefits__item">
+              <div class="benefits__item__icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M25.1377 15.9125L28.0002 20.85" stroke="#8964C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M19.2749 18.6625L20.1624 23.7" stroke="#8964C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12.7127 18.65L11.8252 23.7" stroke="#8964C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.8498 15.9125L3.9873 20.875" stroke="#8964C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M4 13.1125C6.1 15.7125 9.95 19 16 19C22.05 19 25.9 15.7125 28 13.1125" stroke="#8964C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="benefits__item__description">
+                <h6 class="benefits-heading">Be Open and Honest</h6>
+                <p class="paragraph paragraph--benefits">As daunting as it may be, being open and honest about your thoughts and feelings is crucial if you want to get the most out of therapy. That doesn’t mean you need to offload all your innermost feelings in the first session, but allow yourself to be a little freer while talking.</p>
+              </div>
+            </div>
+            <div class="benefits__item">
+              <div class="benefits__item__icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="#8964C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16 16H23" stroke="#8964C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20.95 20.95L16 16" stroke="#8964C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="benefits__item__description">
+                <h6 class="benefits-heading">Reserve Time for Yourself Before the Session</h6>
+                <p class="paragraph paragraph--benefits">It’s a good idea to schedule some time for yourself before the start of your session, especially if you’re nervous about the appointment. Turn off your cellphone and put away your work to allow yourself to just sit with your feelings.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="hero-section">
+      <div class="container">
+        <div class="layout layout--hero">
+          <h1 class="main-heading">Find your next personal psychiatrist</h1>
+          <p class="paragraph paragraph--hero">We know the importance of finding someone who can not only listen to your problem but had a similar experience.</p>
+        </div>
+      </div>
+    </section>
+    <section class="therapist-section">
+      <div class="container">
+        <div class="results-nav">
+          <div class="layout layout--results-nav js-results-nav">
+            <p class="paragraph paragraph--result-number">92 psychiatrist available</p>
+            <div class="button button--outline js-filter-btn">
+                <span class="button__icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 8C12.5 7.72386 12.2761 7.5 12 7.5H4C3.72386 7.5 3.5 7.72386 3.5 8C3.5 8.27614 3.72386 8.5 4 8.5H12C12.2761 8.5 12.5 8.27614 12.5 8Z" fill="#554C65"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15 5C15 4.72386 14.7761 4.5 14.5 4.5H1.5C1.22386 4.5 1 4.72386 1 5C1 5.27614 1.22386 5.5 1.5 5.5H14.5C14.7761 5.5 15 5.27614 15 5Z" fill="#554C65"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 11C10 10.7239 9.77614 10.5 9.5 10.5H6.5C6.22386 10.5 6 10.7239 6 11C6 11.2761 6.22386 11.5 6.5 11.5H9.5C9.77614 11.5 10 11.2761 10 11Z" fill="#554C65"/>
+</svg>
+                </span>
+              <span class="button__text">Filter</span>
+            </div>
+          </div>
+        </div>
+        <div class="results">
+          <div class="layout layout--therapist-result">
+            <div class="therapist-item js-therapist-item">
+              <div class="abs-wrapper">
+                <figure class="therapist-item__image">
+                  <img src="/img/maya-angelou.png" alt="Maya Angelou" data-image>
+                </figure>
+                <div class="therapist-rating">
+                  <span class="inline-text">4.28</span>
+                </div>
+              </div>
+              <h2 class="therapist-item__name" data-name>Maya Angelou</h2>
+              <div class="therapist-item__description">
+                <div class="layout layout--therapist-item-description">
+                  <p class="paragraph item-label">General psychiatrist</p>
+                  <span class="circle-break"></span>
+                  <p class="paragraph item-label">13 years</p>
+                </div>
+              </div>
+              <div class="therapist-item__price">
+                <p class="paragraph paragraph--price"><span class="price-bold" data-price>€220</span> per session</p>
+              </div>
+            </div>
+            <div class="therapist-item js-therapist-item">
+              <div class="abs-wrapper">
+                <figure class="therapist-item__image">
+                  <img src="/img/charlie-botosh.png" alt="Charlie Botosh" data-image>
+                </figure>
+                <div class="therapist-rating">
+                  <span class="inline-text">4.28</span>
+                </div>
+              </div>
+              <h2 class="therapist-item__name" data-name>Charlie Botosh</h2>
+              <div class="therapist-item__description">
+                <div class="layout layout--therapist-item-description">
+                  <p class="paragraph item-label">General psychiatrist</p>
+                  <span class="circle-break"></span>
+                  <p class="paragraph item-label">13 years</p>
+                </div>
+              </div>
+              <div class="therapist-item__price">
+                <p class="paragraph paragraph--price"><span class="price-bold" data-price>€220</span> per session</p>
+              </div>
+            </div>
+            <div class="therapist-item js-therapist-item">
+              <div class="abs-wrapper">
+                <figure class="therapist-item__image">
+                  <img src="/img/amon-dias.png" alt="Amon Dias" data-image>
+                </figure>
+                <div class="therapist-rating">
+                  <span class="inline-text">4.28</span>
+                </div>
+              </div>
+              <h2 class="therapist-item__name" data-name>Amon Dias</h2>
+              <div class="therapist-item__description">
+                <div class="layout layout--therapist-item-description">
+                  <p class="paragraph item-label">General psychiatrist</p>
+                  <span class="circle-break"></span>
+                  <p class="paragraph item-label">13 years</p>
+                </div>
+              </div>
+              <div class="therapist-item__price">
+                <p class="paragraph paragraph--price"><span class="price-bold" data-price>€220</span> per session</p>
+              </div>
+            </div>
+            <div class="therapist-item js-therapist-item">
+              <div class="abs-wrapper">
+                <figure class="therapist-item__image">
+                  <img src="/img/tatiana-franci.png" alt="Tatiana Franci" data-image>
+                </figure>
+                <div class="therapist-rating">
+                  <span class="inline-text">4.28</span>
+                </div>
+              </div>
+              <h2 class="therapist-item__name" data-name>Tatiana Franci</h2>
+              <div class="therapist-item__description">
+                <div class="layout layout--therapist-item-description">
+                  <p class="paragraph item-label">General psychiatrist</p>
+                  <span class="circle-break"></span>
+                  <p class="paragraph item-label">13 years</p>
+                </div>
+              </div>
+              <div class="therapist-item__price">
+                <p class="paragraph paragraph--price"><span class="price-bold" data-price>€220</span> per session</p>
+              </div>
+            </div>
+            <div class="therapist-item js-therapist-item">
+              <div class="abs-wrapper">
+                <figure class="therapist-item__image">
+                  <img src="/img/allison-baptista.png" alt="Allison Baptista" data-image>
+                </figure>
+                <div class="therapist-rating">
+                  <span class="inline-text">4.28</span>
+                </div>
+              </div>
+              <h2 class="therapist-item__name" data-name>Allison Baptista</h2>
+              <div class="therapist-item__description">
+                <div class="layout layout--therapist-item-description">
+                  <p class="paragraph item-label">General psychiatrist</p>
+                  <span class="circle-break"></span>
+                  <p class="paragraph item-label">13 years</p>
+                </div>
+              </div>
+              <div class="therapist-item__price">
+                <p class="paragraph paragraph--price"><span class="price-bold" data-price>€220</span> per session</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
